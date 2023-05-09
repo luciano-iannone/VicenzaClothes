@@ -456,3 +456,104 @@ a{
         "grid-h";
     }
 }
+
+/*!-----PRODUCTOS MEDIA QUERY------*/
+
+@media screen and (max-width:1050px){
+    .productos-remeras{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 40px;
+        grid-template-areas: "remeras remeras"
+        "remera-1 remera-2"
+        "remera-3 remera-4"
+        "remera-5 remera-6";
+    }
+    .productos-remeras div{
+        padding:0px;
+        margin:0px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .productos-remeras{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 40px;
+        grid-template-areas: "remeras "
+        "remera-1" 
+        "remera-2"
+        "remera-3" 
+        "remera-4"
+        "remera-5" 
+        "remera-6";
+    }
+    .productos-remeras div{
+        padding:0px;
+        margin:0px;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .productos-pantalones{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:85px;
+        grid-template-areas: "pantalones pantalones"
+        "pantalon-1 pantalon-2"
+        "pantalon-3 pantalon-4"
+        "pantalon-5 pantalon-6";
+    }
+    .productos-pantalones div{
+        padding:0px;
+        margin:0px;
+    }
+}
+@media screen and (max-width:450px){
+    .productos-pantalones{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows:85px;
+        grid-template-areas: "pantalones"
+        "pantalon-1" 
+        "pantalon-2"
+        "pantalon-3" 
+        "pantalon-4"
+        "pantalon-5" 
+        "pantalon-6";
+    }
+    .productos-pantalones div{
+        padding:0px;
+        margin:0px;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .productos-buzos{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:85px;
+        grid-template-areas: "buzos buzos"
+        "buzo-1 buzo-2"
+        "buzo-3 buzo-4"
+        "buzo-5 buzo-6";
+        padding-bottom:30px;
+    }
+    .productos-buzos div{
+        padding:0px;
+        margin:0px;
+    }
+}
+@media screen and (max-width:450px){
+    .productos-buzos{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows:85px;
+        grid-template-areas: "buzos"
+        "buzo-1" 
+        "buzo-2"
+        "buzo-3" 
+        "buzo-4"
+        "buzo-5" 
+        "buzo-6";
+        padding-bottom:30px;
+    }
+    .productos-buzos div{
+        padding:0px;
+        margin:0px;
+    }
+}
