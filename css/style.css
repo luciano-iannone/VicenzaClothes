@@ -57,10 +57,10 @@ a{
 .destacados{
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    grid-template-rows:50px 300px;
+    grid-template-rows:50px 310px;
     grid-template-areas: "titulo titulo titulo titulo"
     "grid-1 grid-2 grid-3 grid-4";
-    gap:5px;
+    gap:15px;
     padding-bottom:25px;
     background-color: #d2ddeb;
 }
@@ -110,12 +110,12 @@ a{
 .ofertas{
     display:grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 50px 300px;
+    grid-template-rows: 50px 310px;
     grid-template-areas: "titulo-ofertas titulo-ofertas titulo-ofertas titulo-ofertas"
     "grid-a grid-b grid-c grid-d"
     "gird-e grid-f grid-g grid-h";
-    gap:25px;
-    padding-bottom:25px;
+    gap:30px;
+    padding-bottom:30px;
     background-color: #d2ddeb;
 }
 
