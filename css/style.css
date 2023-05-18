@@ -173,25 +173,28 @@ a{
     margin: 0px;
 }
 
-.productos p{
+.productos h3{
     display: flex;
     justify-content: center;
     background-color: #d2ddeb;
     margin:0px;
     padding-bottom: 40px;
     padding-top: 40px;
-    color: Red;
+    color: rgb(0, 0, 0);
+
 }
 
 .productos-remeras{
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows:50px 275px 275px;
+    grid-template-rows:55px auto auto;
     grid-template-areas:"remeras remeras remeras"
     "remera-1 remera-2 remera-3"
     "remera-4 remera-5 remera-6";
     gap: 40px;
     background-color: #d2ddeb;
+    margin:0px;
+    padding-bottom:30px;
 }
 
 .productos-remeras h2{
@@ -206,13 +209,13 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 13px 9px 28px -16px rgba(0,0,0,0.46);
-    -webkit-box-shadow: 13px 9px 28px -16px rgba(0,0,0,0.46);
-    -moz-box-shadow: 13px 9px 28px -16px rgba(0,0,0,0.46);
-    height: 108%;
-    width:180px;
+    box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.795);
+    -webkit-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.753);
+    -moz-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.801);
+    height: 400px;
+    width:220px;
     margin-left: 140px;
-    background-color:#BD93D8;
+    border:3px solid #BD93D8;
 }
 
 .productos-remeras div p{
@@ -229,13 +232,16 @@ a{
 .productos-pantalones{
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows:90px 275px 275px;
+    grid-template-rows:45px auto auto;
     grid-template-areas:"pantalones pantalones pantalones"
     "pantalon-1 pantalon-2 pantalon-3"
     "pantalon-4 pantalon-5 pantalon-6";
     gap: 40px;
     background-color: #d2ddeb;
+    width:100%;
+    padding-bottom: 30px;
 }
+
 
 .productos-pantalones h2{
     grid-area: pantalones;
@@ -243,20 +249,21 @@ a{
     color: #7BCDBA;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin:0px;
 }
 
 .productos-pantalones div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 13px 9px 28px -16px rgba(0,0,0,0.46);
-    -webkit-box-shadow: 13px 9px 28px -16px rgba(0,0,0,0.46);
-    -moz-box-shadow: 13px 9px 28px -16px rgba(0,0,0,0.46);
-    height: 108%;
-    width:180px;
+    justify-content: center;
+    box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.788);
+    -webkit-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.788);
+    -moz-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.788);
+    height:400px;
+    width:220px;
+    border:3px solid #7BCDBA;
     margin-left: 140px;
-    background-color:#7BCDBA;
 }
 
 .productos-pantalones div p{
@@ -271,7 +278,7 @@ a{
 .productos-buzos{
     display:grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows:90px 275px 275px;
+    grid-template-rows:55px auto auto;
     grid-template-areas:"buzos buzos buzos"
     "buzo-1 buzo-2 buzo-3"
     "buzo-4 buzo-5 buzo-6";
@@ -286,20 +293,19 @@ a{
     color: #93748A;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
 }
 
 .productos-buzos div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 13px 9px 28px -16px rgba(0,0,0,0.46);
-    -webkit-box-shadow: 13px 9px 28px -16px rgba(0,0,0,0.46);
-    -moz-box-shadow: 13px 9px 28px -16px rgba(0,0,0,0.46);
-    height: 108%;
-    width:180px;
+    box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.795);
+    -webkit-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.788);
+    -moz-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.795);
+    height: 400px;
+    width:220px;
     margin-left: 140px;
-    background-color:#93748A;
+    border:3px solid #93748A;
 }
 
 .productos-buzos div p{
@@ -459,75 +465,41 @@ a{
 
 /*!-----PRODUCTOS MEDIA QUERY------*/
 
-@media screen and (max-width:1050px){
+@media screen and (max-width:1165px){
     .productos-remeras{
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 40px;
+        grid-template-rows: 45px;
         grid-template-areas: "remeras remeras"
         "remera-1 remera-2"
         "remera-3 remera-4"
         "remera-5 remera-6";
+        gap: 20px;
     }
     .productos-remeras div{
         padding:0px;
-        margin:0px;
+        margin-left:130px;
     }
 }
-
-@media screen and (max-width:450px){
-    .productos-remeras{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: 40px;
-        grid-template-areas: "remeras "
-        "remera-1" 
-        "remera-2"
-        "remera-3" 
-        "remera-4"
-        "remera-5" 
-        "remera-6";
-    }
-    .productos-remeras div{
-        padding:0px;
-        margin:0px;
-    }
-}
-
-@media screen and (max-width:1050px){
+@media screen and (max-width:1165px){
     .productos-pantalones{
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows:85px;
+        grid-template-rows:40px;
         grid-template-areas: "pantalones pantalones"
         "pantalon-1 pantalon-2"
         "pantalon-3 pantalon-4"
         "pantalon-5 pantalon-6";
+        gap:20px;
     }
     .productos-pantalones div{
         padding:0px;
-        margin:0px;
-    }
-}
-@media screen and (max-width:450px){
-    .productos-pantalones{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows:85px;
-        grid-template-areas: "pantalones"
-        "pantalon-1" 
-        "pantalon-2"
-        "pantalon-3" 
-        "pantalon-4"
-        "pantalon-5" 
-        "pantalon-6";
-    }
-    .productos-pantalones div{
-        padding:0px;
-        margin:0px;
+        margin-left:130px;
     }
 }
 
-@media screen and (max-width:1050px){
+@media screen and (max-width:1165px){
     .productos-buzos{
         grid-template-columns: repeat(2,1fr);
-        grid-template-rows:85px;
+        grid-template-rows:45px;
         grid-template-areas: "buzos buzos"
         "buzo-1 buzo-2"
         "buzo-3 buzo-4"
@@ -536,13 +508,89 @@ a{
     }
     .productos-buzos div{
         padding:0px;
-        margin:0px;
+        margin-left:130px;
     }
 }
-@media screen and (max-width:450px){
+
+@media screen and (max-width:840px){
+    .productos-remeras div{
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width:840px){
+    .productos-pantalones div{
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width:840px){
+    .productos-buzos div{
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width:710px){
+    .productos-remeras div{
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width:710px){
+    .productos-pantalones div{
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width:710px){
+    .productos-buzos div{
+        margin-left: 80px;
+    }
+}
+
+
+@media screen and (max-width:660px){
+    .productos-remeras{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 40px;
+        grid-template-areas: "remeras"
+        "remera-1" 
+        "remera-2"
+        "remera-3" 
+        "remera-4"
+        "remera-5" 
+        "remera-6";
+        padding-bottom:70px;
+    }
+    .productos-remeras div{
+        padding:0px;
+        margin-left:170px;
+    }
+}
+
+@media screen and (max-width:660px){
+    .productos-pantalones{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows:40px;
+        grid-template-areas: "pantalones"
+        "pantalon-1" 
+        "pantalon-2"
+        "pantalon-3" 
+        "pantalon-4"
+        "pantalon-5" 
+        "pantalon-6";
+        padding-bottom:50px;
+    }
+    .productos-pantalones div{
+        padding:0px;
+        margin-left:170px;
+    }
+}
+
+@media screen and (max-width:660px){
     .productos-buzos{
         grid-template-columns: repeat(1,1fr);
-        grid-template-rows:85px;
+        grid-template-rows:40px;
         grid-template-areas: "buzos"
         "buzo-1" 
         "buzo-2"
@@ -550,10 +598,56 @@ a{
         "buzo-4"
         "buzo-5" 
         "buzo-6";
-        padding-bottom:30px;
+        padding-bottom:50px;
     }
     .productos-buzos div{
         padding:0px;
-        margin:0px;
+        margin-left:170px;
+    }
+    .productos-buzos h2{
+        padding-bottom:30px;
+    }
+}
+
+
+@media screen and (max-width:440px){
+    .productos-remeras div{
+        margin-left:100px;
+    }
+}
+
+@media screen and (max-width:440px){
+    .productos-pantalones div{
+        margin-left:100px;
+    }
+}
+
+@media screen and (max-width:440px){
+    .productos-buzos div{
+        margin-left:100px;
+    }
+}
+
+@media screen and (max-width:330px){
+    .productos-remeras div{
+        margin-left:30px;
+    }
+}
+
+@media screen and (max-width:330px){
+    .productos-pantalones div{
+        margin-left:30px;
+    }
+}
+
+@media screen and (max-width:330px){
+    .productos-buzos div{
+        margin-left:30px;
+    }
+}
+
+@media screen and (max-width:330px){
+    .navbar-brand{
+        font-size: 20px;
     }
 }
