@@ -1,9 +1,10 @@
+/*------------header---------*/
 header{
     nav{
         div{
             .navbar-brand{
                 h1{
-                    color: rgb(255, 255, 255);
+                    color:$color-logo;
                     text-decoration: underline;
                     font-size: 40px;
                 }

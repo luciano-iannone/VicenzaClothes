@@ -1,8 +1,10 @@
+/*----------index page--------*/
 main{
     .hero{
         padding-top:100px;
         padding-bottom: 100px;
-        background-color:#0D1F2D;
+        background: rgb(27,0,126);
+        background: radial-gradient(circle, rgba(27,0,126,1) 0%, rgba(0,0,0,1) 100%);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
@@ -31,11 +33,11 @@ main{
         "grid-1 grid-2 grid-3 grid-4";
         gap:15px;
         padding-bottom:25px;
-        background-color: #d2ddeb;
+        background-color:$color-principal;
         h2{
-            display: flex;
-            justify-content: center;
-            background-color:#0a80bb;
+            @extend %flex;
+            background: rgb(41,41,41);
+            background: radial-gradient(circle, rgba(41,41,41,1) 0%, rgba(38,42,46,1) 20%, rgba(99,127,159,1) 100%);
             color:white;
             text-decoration:underline;
             grid-area:titulo;
@@ -64,19 +66,18 @@ main{
         "gird-e grid-f grid-g grid-h";
         gap:30px;
         padding-bottom:30px;
-        background-color: #d2ddeb;
+        background-color:$color-principal;
         h2{
-            display:flex;
-            justify-content: center;
-            background-color:#0a80bb;
+            @extend %flex;
+            background: rgb(41,41,41);
+            background: radial-gradient(circle, rgba(41,41,41,1) 0%, rgba(38,42,46,1) 20%, rgba(99,127,159,1) 100%);
             color:white;
             text-decoration:underline;
             grid-area:titulo-ofertas;
         }
         div{
-            display: flex;
+            @extend %flex;
             flex-direction: column;
-            align-items: center;
             box-shadow: 13px 9px 28px -16px rgba(0,0,0,0.46);
             -webkit-box-shadow: 13px 9px 28px -16px rgba(0,0,0,0.46);
             -moz-box-shadow: 13px 9px 28px -16px rgba(0,0,0,0.46);
@@ -94,18 +95,17 @@ main{
 main{
     .productos{
         h2{
-            display:flex;
-            justify-content: center;
+            @extend %flex;
             background-color:#7BCDBA;
             color:black;
             font-size: 30px;
             text-decoration: underline ;
             margin: 0px;
+            padding-top: 55px;
         }
         h3{
-            display: flex;
-            justify-content: center;
-            background-color: #d2ddeb;
+            @extend %flex;
+            background-color: $color-principal;
             margin:0px;
             padding-bottom: 40px;
             padding-top: 40px;
@@ -120,20 +120,19 @@ main{
         "remera-1 remera-2 remera-3"
         "remera-4 remera-5 remera-6";
         gap: 40px;
-        background-color: #d2ddeb;
+        background-color: $color-principal;
         margin:0px;
         padding-bottom:30px;
         h2{
             grid-area: remeras;
-            background-color: black;
+            background: rgb(23,23,23);
+            background: radial-gradient(circle, rgba(23,23,23,1) 0%, rgba(54,41,61,1) 31%, rgba(189,147,216,1) 100%);
             color: #BD93D8;
-            display: flex;
-            justify-content: center;
+            @extend %flex;
         }
         div{
-            display: flex;
+            @extend %flex;
             flex-direction: column;
-            align-items: center;
             box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.795);
             -webkit-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.753);
             -moz-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.801);
@@ -158,22 +157,20 @@ main{
         "pantalon-1 pantalon-2 pantalon-3"
         "pantalon-4 pantalon-5 pantalon-6";
         gap: 40px;
-        background-color: #d2ddeb;
+        background-color: $color-principal;
         width:100%;
         padding-bottom: 30px;
         h2{
             grid-area: pantalones;
-            background-color: black;
+            background: rgb(23,23,23);
+            background: radial-gradient(circle, rgba(23,23,23,1) 0%, rgba(25,48,41,1) 26%, rgba(66,147,118,1) 100%);
             color: #7BCDBA;
-            display: flex;
-            justify-content: center;
+            @extend %flex;
             margin:0px;
         }
         div{
-            display: flex;
+            @extend %flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
             box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.788);
             -webkit-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.788);
             -moz-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.788);
@@ -198,19 +195,19 @@ main{
         "buzo-1 buzo-2 buzo-3"
         "buzo-4 buzo-5 buzo-6";
         gap: 40px;
-        background-color: #d2ddeb;
+        background-color:$color-principal;
         padding-bottom:40px;
         h2{
             grid-area: buzos;
-            background-color: black;
+            background: rgb(23,23,23);
+            background: radial-gradient(circle, rgba(23,23,23,1) 0%, rgba(29,19,15,1) 26%, rgba(147,116,138,1) 100%);
             color: #93748A;
             display: flex;
             justify-content: center;
         }
         div{
-            display: flex;
+            @extend %flex;
             flex-direction: column;
-            align-items: center;
             box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.795);
             -webkit-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.788);
             -moz-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.795);
@@ -235,20 +232,17 @@ main{
         .titulo-nosotros{
             margin-top:57px ;
             background-color: #93748A;
-            display: flex;
-            justify-content: center;
+            @extend %flex;
             padding-bottom: 5px;
         }
     }
     .nosotros-2{
         div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex;
             flex-direction: column;
             padding-bottom: 150px;
             padding-top: 70px;
-            background-color: #d2ddeb;
+            background-color:$color-principal;
         }
     }
 }
@@ -266,12 +260,11 @@ main{
         gap: 20px;
         padding-top: 70px;
         padding-left: 30px;
-        background-color: #d2ddeb;
+        background-color:$color-principal;
         height: 850px;
         h2{
             grid-area:titulo-local;
-            display: flex;
-            justify-content: center;
+            @extend %flex;
             text-decoration: underline;
         }
         div{
@@ -286,8 +279,7 @@ main{
         }
         .sub{
             grid-area:bottom-t;
-            display: flex;
-            justify-content: center;
+            @extend %flex;
         }
     }
 }
@@ -297,12 +289,13 @@ main{
     .section-envios{
         padding-top: 55px;
         list-style:circle;
-        background-color: #d2ddeb;
+        background-color:$color-principal;
         padding-bottom: 410px;
         h2{
-            background-color: #7BCDBA;
-            display: flex;
-            justify-content: center;
+            background: rgb(23,23,23);
+            background: radial-gradient(circle, rgba(23,23,23,1) 0%, rgba(25,48,41,1) 26%, rgba(66,147,118,1) 100%);
+            @extend %flex;
+            color: white;
         }
         ul{
             li{

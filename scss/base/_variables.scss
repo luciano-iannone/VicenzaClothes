@@ -1,0 +1,17 @@
+$color-principal:#a8aeb6;
+$color-logo:white;
+$color-footer-header:#7D869C;
+
+//*listas
+$colores:
+#93748A,
+#7BCDBA,
+#BD93D8;
+
+//*extends
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
