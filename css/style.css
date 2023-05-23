@@ -316,7 +316,7 @@ a{
 .productos-buzos div h3{
     font-size: 15px;
 }
-/*!-------------Acerca-de page--------------*/
+/*!-------------nosotros page--------------*/
 
 .titulo-nosotros{
     margin-top:57px ;
@@ -330,11 +330,12 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 70px;
+    padding-bottom: 150px;
     padding-top: 70px;
     background-color: #d2ddeb;
 }
 
+/*!---------------Locales page------------*/
 .locales{
     display:grid;
     grid-template-columns: repeat(4,1fr);
@@ -346,9 +347,35 @@ a{
     padding-top: 70px;
     padding-left: 30px;
     background-color: #d2ddeb;
+    height: 850px;
 }
 
-/*!---------------Locales page------------*/
+.locales h2{
+    grid-area:titulo-local;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.local-1{
+    grid-area:local-1;
+}
+.local-2{
+    grid-area:local-2;
+}
+.local-3{
+    grid-area:local-3;
+}
+.local-4{
+    grid-area:local-4;
+}
+
+.locales .sub{
+    grid-area:bottom-t;
+    display: flex;
+    justify-content: center;
+}
+
 .locales div{
     border:2px white solid;
     display:flex;
@@ -359,26 +386,13 @@ a{
     -moz-box-shadow: 4px 5px 11px 0px rgba(0,0,0,0.5);
     background-color: white;
 }
-
-.locales h2{
-    grid-area:titulo-local;
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
-}
-
-.locales .sub{
-    grid-area: bottom-t;
-    display: flex;
-    justify-content: center;
-}
 /*!--------------Envios page------------*/
 
 .section-envios{
     padding-top: 55px;
     list-style:circle;
     background-color: #d2ddeb;
-    padding-bottom: 350px;
+    padding-bottom: 410px;
 }
 
 .section-envios h2{
@@ -389,6 +403,7 @@ a{
 
 .section-envios ul li{
     list-style:disc;
+    font-size: 25px;
 }
 
 
@@ -650,4 +665,60 @@ a{
     .navbar-brand{
         font-size: 20px;
     }
+}
+
+/*!-----locales media query-----*/
+
+@media screen and (max-width:1350px){
+    .locales{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:50px 380px 380px 40px;
+        grid-template-areas:"titulo-local titulo-local"
+        "local-1 local-2"
+        "local-3 local-4"
+        "bottom-t bottom-t";
+        height:1100px;
+    }
+    .locales div{
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width:905px){
+    .locales{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows:50px 380px 380px 380px 380px 40px;
+        grid-template-areas:"titulo-local "
+        "local-1" 
+        "local-2"
+        "local-3" 
+        "local-4"
+        "bottom-t";
+        height:2000px;
+    }
+}
+
+@media screen and (max-width:430px){
+    .locales div{
+        height: 350px;
+        width: 200px;
+        margin-left:10px;
+    }
+}
+
+/*!----nosotros media query----*/
+
+@media screen and (max-width:525px){
+    .nosotros-2 div img{
+        width: 340px;
+    }
+}
+
+@media screen and (max-width:357px){
+    .titulo-nosotros{
+        margin-top:97px;
+        }
+        .nosotros-2 div img{
+            width: 280px;
+        }
 }

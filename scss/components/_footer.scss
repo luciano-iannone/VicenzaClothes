@@ -1,0 +1,18 @@
+.footer{
+    background-color:#7D869C;
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items:center;
+    padding:5px;
+    h2{
+        color:rgb(255, 255, 255);
+        font-family:'Poppins', sans-serif;
+        font-weight:500;
+        font-size:20px;
+    }
+    p{
+        color:white;
+        font-size:15px;
+    }
+}

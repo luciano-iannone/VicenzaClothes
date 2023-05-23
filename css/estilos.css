@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Poppins:wght@300;500&display=swap");
+header nav div .navbar-brand h1 {
+  color: white;
+  text-decoration: underline;
+  font-size: 40px; }
+
+main .hero {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #0D1F2D;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+  main .hero h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: white; }
+  main .hero p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: white; }
+
+main .destacados {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px 310px;
+  grid-template-areas: "titulo titulo titulo titulo" "grid-1 grid-2 grid-3 grid-4";
+  gap: 15px;
+  padding-bottom: 25px;
+  background-color: #d2ddeb; }
+  main .destacados h2 {
+    display: flex;
+    justify-content: center;
+    background-color: #0a80bb;
+    color: white;
+    text-decoration: underline;
+    grid-area: titulo; }
+  main .destacados div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.46);
+    -webkit-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.46); }
+    main .destacados div h3 {
+      font-size: 15px; }
+    main .destacados div p {
+      font-size: 15px; }
+
+main .ofertas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px 310px;
+  grid-template-areas: "titulo-ofertas titulo-ofertas titulo-ofertas titulo-ofertas" "grid-a grid-b grid-c grid-d" "gird-e grid-f grid-g grid-h";
+  gap: 30px;
+  padding-bottom: 30px;
+  background-color: #d2ddeb; }
+  main .ofertas h2 {
+    display: flex;
+    justify-content: center;
+    background-color: #0a80bb;
+    color: white;
+    text-decoration: underline;
+    grid-area: titulo-ofertas; }
+  main .ofertas div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.46);
+    -webkit-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.46);
+    padding: 0px; }
+    main .ofertas div h3 {
+      font-size: 15px; }
+    main .ofertas div p {
+      font-size: 15px; }
+
+/*----------product page--------*/
+main .productos h2 {
+  display: flex;
+  justify-content: center;
+  background-color: #7BCDBA;
+  color: black;
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 0px; }
+
+main .productos h3 {
+  display: flex;
+  justify-content: center;
+  background-color: #d2ddeb;
+  margin: 0px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  color: black; }
+
+main .productos-remeras {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 55px auto auto;
+  grid-template-areas: "remeras remeras remeras" "remera-1 remera-2 remera-3" "remera-4 remera-5 remera-6";
+  gap: 40px;
+  background-color: #d2ddeb;
+  margin: 0px;
+  padding-bottom: 30px; }
+  main .productos-remeras h2 {
+    grid-area: remeras;
+    background-color: black;
+    color: #BD93D8;
+    display: flex;
+    justify-content: center; }
+  main .productos-remeras div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.795);
+    -webkit-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.753);
+    -moz-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.801);
+    height: 400px;
+    width: 220px;
+    margin-left: 140px;
+    border: 3px solid #BD93D8; }
+    main .productos-remeras div h3 {
+      font-size: 15px; }
+    main .productos-remeras div p {
+      margin-bottom: 5px;
+      font-size: 15px; }
+
+main .productos-pantalones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 45px auto auto;
+  grid-template-areas: "pantalones pantalones pantalones" "pantalon-1 pantalon-2 pantalon-3" "pantalon-4 pantalon-5 pantalon-6";
+  gap: 40px;
+  background-color: #d2ddeb;
+  width: 100%;
+  padding-bottom: 30px; }
+  main .productos-pantalones h2 {
+    grid-area: pantalones;
+    background-color: black;
+    color: #7BCDBA;
+    display: flex;
+    justify-content: center;
+    margin: 0px; }
+  main .productos-pantalones div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.788);
+    -webkit-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.788);
+    -moz-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.788);
+    height: 400px;
+    width: 220px;
+    border: 3px solid #7BCDBA;
+    margin-left: 140px; }
+    main .productos-pantalones div h3 {
+      font-size: 15px; }
+    main .productos-pantalones div p {
+      margin-bottom: 5px;
+      font-size: 15px; }
+
+main .productos-buzos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 55px auto auto;
+  grid-template-areas: "buzos buzos buzos" "buzo-1 buzo-2 buzo-3" "buzo-4 buzo-5 buzo-6";
+  gap: 40px;
+  background-color: #d2ddeb;
+  padding-bottom: 40px; }
+  main .productos-buzos h2 {
+    grid-area: buzos;
+    background-color: black;
+    color: #93748A;
+    display: flex;
+    justify-content: center; }
+  main .productos-buzos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.795);
+    -webkit-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.788);
+    -moz-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.795);
+    height: 400px;
+    width: 220px;
+    margin-left: 140px;
+    border: 3px solid #93748A; }
+    main .productos-buzos div h3 {
+      font-size: 15px; }
+    main .productos-buzos div p {
+      margin-bottom: 5px;
+      font-size: 15px; }
+
+/*-----------nosotros page----------*/
+main .acerca-nosotros .titulo-nosotros {
+  margin-top: 57px;
+  background-color: #93748A;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px; }
+
+main .nosotros-2 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 150px;
+  padding-top: 70px;
+  background-color: #d2ddeb; }
+
+/*-----------locales page----------*/
+main .locales {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50px 380px 70px;
+  grid-template-areas: "titulo-local titulo-local titulo-local titulo-local" "local-1 local-2 local-3 local-4" "bottom-t bottom-t bottom-t bottom-t";
+  gap: 20px;
+  padding-top: 70px;
+  padding-left: 30px;
+  background-color: #d2ddeb;
+  height: 850px; }
+  main .locales h2 {
+    grid-area: titulo-local;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline; }
+  main .locales div {
+    border: 2px white solid;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 4px 5px 11px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 4px 5px 11px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 4px 5px 11px 0px rgba(0, 0, 0, 0.5);
+    background-color: white; }
+  main .locales .sub {
+    grid-area: bottom-t;
+    display: flex;
+    justify-content: center; }
+
+/*--------------envios page----------*/
+main .section-envios {
+  padding-top: 55px;
+  list-style: circle;
+  background-color: #d2ddeb;
+  padding-bottom: 410px; }
+  main .section-envios h2 {
+    background-color: #7BCDBA;
+    display: flex;
+    justify-content: center; }
+  main .section-envios ul li {
+    list-style: disc;
+    font-size: 25px; }
+
+.footer {
+  background-color: #7D869C;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px; }
+  .footer h2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px; }
+  .footer p {
+    color: white;
+    font-size: 15px; }
+
+/*-----generales-----*/
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+/*----------index media query--------*/
+@media screen and (max-width: 740px) {
+  main .hero {
+    padding-top: 110px; }
+  main .destacados {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 300px 300px;
+    grid-template-areas: "titulo titulo" "grid-1 grid-2" "grid-3 grid-4"; }
+  main .ofertas {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 300px 300px 300px 300px;
+    grid-template-areas: "titulo-ofertas titulo-ofertas" "grid-a grid-b" "grid-c grid-d" "grid-e grid-f" "grid-g grid-h"; } }
+
+@media screen and (max-width: 420px) {
+  main .hero {
+    padding-top: 140px; }
+  main .destacados {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 40px;
+    grid-template-areas: "titulo" "grid-1" "grid-2" "grid-3" "grid-4"; }
+  main .ofertas {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 40px;
+    grid-template-areas: "titulo-ofertas" "grid-a" "grid-b" "grid-c" "grid-d" "grid-e" "grid-f" "grid-g" "grid-h"; } }
+
+/*--------productos media query--------*/
+@media screen and (max-width: 1165px) {
+  .productos-remeras {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 45px;
+    grid-template-areas: "remeras remeras" "remera-1 remera-2" "remera-3 remera-4" "remera-5 remera-6";
+    gap: 20px; }
+    .productos-remeras div {
+      padding: 0px;
+      margin-left: 130px; }
+  .productos-pantalones {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40px;
+    grid-template-areas: "pantalones pantalones" "pantalon-1 pantalon-2" "pantalon-3 pantalon-4" "pantalon-5 pantalon-6";
+    gap: 20px; }
+    .productos-pantalones div {
+      padding: 0px;
+      margin-left: 130px; }
+  .productos-buzos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 45px;
+    grid-template-areas: "buzos buzos" "buzo-1 buzo-2" "buzo-3 buzo-4" "buzo-5 buzo-6";
+    padding-bottom: 30px; }
+    .productos-buzos div {
+      padding: 0px;
+      margin-left: 130px; } }
+
+@media screen and (max-width: 840px) {
+  .productos-remeras div {
+    margin-left: 100px; }
+  .productos-pantalones div {
+    margin-left: 100px; }
+  .productos-buzos div {
+    margin-left: 100px; } }
+
+@media screen and (max-width: 710px) {
+  .productos-remeras div {
+    margin-left: 80px; }
+  .productos-pantalones div {
+    margin-left: 80px; }
+  .productos-buzos div {
+    margin-left: 80px; } }
+
+@media screen and (max-width: 660px) {
+  .productos-remeras {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 40px;
+    grid-template-areas: "remeras" "remera-1"  "remera-2" "remera-3"  "remera-4" "remera-5"  "remera-6";
+    padding-bottom: 70px; }
+    .productos-remeras div {
+      padding: 0px;
+      margin-left: 170px; }
+  .productos-pantalones {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 40px;
+    grid-template-areas: "pantalones" "pantalon-1"  "pantalon-2" "pantalon-3"  "pantalon-4" "pantalon-5"  "pantalon-6";
+    padding-bottom: 50px; }
+    .productos-pantalones div {
+      padding: 0px;
+      margin-left: 170px; }
+  .productos-buzos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 40px;
+    grid-template-areas: "buzos" "buzo-1"  "buzo-2" "buzo-3"  "buzo-4" "buzo-5"  "buzo-6";
+    padding-bottom: 50px; }
+    .productos-buzos h2 {
+      padding-bottom: 30px; }
+    .productos-buzos div {
+      padding: 0px;
+      margin-left: 170px; } }
+
+@media screen and (max-width: 440px) {
+  .productos-remeras div {
+    margin-left: 100px; }
+  .productos-pantalones div {
+    margin-left: 100px; }
+  .productos-buzos div {
+    margin-left: 100px; } }
+
+@media screen and (max-width: 330px) {
+  .navbar-brand {
+    font-size: 20px; }
+  .productos-remeras div {
+    margin-left: 30px; }
+  .productos-pantalones div {
+    margin-left: 30px; }
+  .productos-buzos div {
+    margin-left: 30px; } }
+
+/*--------locales media query--------*/
+@media screen and (max-width: 1350px) {
+  .locales {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 380px 380px 40px;
+    grid-template-areas: "titulo-local titulo-local" "local-1 local-2" "local-3 local-4" "bottom-t bottom-t";
+    height: 1100px; }
+    .locales .locales div {
+      margin-left: 80px; } }
+
+@media screen and (max-width: 905px) {
+  .locales {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 50px 380px 380px 380px 380px 40px;
+    grid-template-areas: "titulo-local " "local-1"  "local-2" "local-3"  "local-4" "bottom-t";
+    height: 2000px; } }
+
+@media screen and (max-width: 430px) {
+  .locales div {
+    height: 350px;
+    width: 200px;
+    margin-left: 10px; } }
+
+/*---------nosotros media query------*/
+@media screen and (max-width: 525px) {
+  .nosotros-2 div img {
+    width: 340px; } }
+
+@media screen and (max-width: 357px) {
+  .titulo-nosotros {
+    margin-top: 97px; }
+  .nosotros-2 div img {
+    width: 280px; } }
