@@ -55,214 +55,262 @@
 
 /*--------productos media query--------*/
 @media screen and (max-width:1165px){
-    .productos-remeras{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: 45px;
-        grid-template-areas: "remeras remeras"
-        "remera-1 remera-2"
-        "remera-3 remera-4"
-        "remera-5 remera-6";
-        gap: 20px;
-        div{
-            padding:0px;
-            margin-left:130px;
+    main{
+        .productos-remeras{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 45px;
+            grid-template-areas: "remeras remeras"
+            "remera-1 remera-2"
+            "remera-3 remera-4"
+            "remera-5 remera-6";
+            gap: 20px;
+            div{
+                padding:0px;
+                margin-left:130px;
+            }
         }
-    }
-    .productos-pantalones{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows:40px;
-        grid-template-areas: "pantalones pantalones"
-        "pantalon-1 pantalon-2"
-        "pantalon-3 pantalon-4"
-        "pantalon-5 pantalon-6";
-        gap:20px;
-        div{
-            padding:0px;
-            margin-left:130px;
+        .productos-pantalones{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows:40px;
+            grid-template-areas: "pantalones pantalones"
+            "pantalon-1 pantalon-2"
+            "pantalon-3 pantalon-4"
+            "pantalon-5 pantalon-6";
+            gap:20px;
+            div{
+                padding:0px;
+                margin-left:130px;
+            }
         }
-    }
-    .productos-buzos{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows:45px;
-        grid-template-areas: "buzos buzos"
-        "buzo-1 buzo-2"
-        "buzo-3 buzo-4"
-        "buzo-5 buzo-6";
-        padding-bottom:30px;
-        div{
-            padding:0px;
-            margin-left:130px;
+        .productos-buzos{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows:45px;
+            grid-template-areas: "buzos buzos"
+            "buzo-1 buzo-2"
+            "buzo-3 buzo-4"
+            "buzo-5 buzo-6";
+            padding-bottom:30px;
+            div{
+                padding:0px;
+                margin-left:130px;
+            }
         }
     }
 }
 
 @media screen and (max-width:840px){
-    .productos-remeras{
-        div{
-            margin-left: 100px;
+    main{
+        .productos-remeras{
+            div{
+                margin-left: 100px;
+            }
+        } 
+        .productos-pantalones{
+            div{
+                margin-left: 100px;
+            }
         }
-    } 
-    .productos-pantalones{
-        div{
-            margin-left: 100px;
-        }
-    }
-    .productos-buzos{
-        div{
-            margin-left: 100px;
+        .productos-buzos{
+            div{
+                margin-left: 100px;
+            }
         }
     }
 }
 
 @media screen and (max-width:710px){
-    .productos-remeras{ 
-        div{
-            margin-left: 80px;
+    main{
+        .productos-remeras{ 
+            div{
+                margin-left: 80px;
+            }
         }
+        .productos-pantalones{
+            div{
+                margin-left: 80px;
+            }
+        }
+        .productos-buzos{
+            div{
+                margin-left: 80px;
+            }
+        } 
     }
-    .productos-pantalones{
-        div{
-            margin-left: 80px;
-        }
-    }
-    .productos-buzos{
-        div{
-            margin-left: 80px;
-        }
-    } 
+
 }
 
 @media screen and (max-width:660px){
-    .productos-remeras{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: 40px;
-        grid-template-areas: "remeras"
-        "remera-1" 
-        "remera-2"
-        "remera-3" 
-        "remera-4"
-        "remera-5" 
-        "remera-6";
-        padding-bottom:70px;
-        div{
-            padding:0px;
-            margin-left:170px;
+    main{
+        .productos-remeras{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 40px;
+            grid-template-areas: "remeras"
+            "remera-1" 
+            "remera-2"
+            "remera-3" 
+            "remera-4"
+            "remera-5" 
+            "remera-6";
+            padding-bottom:70px;
+            div{
+                padding:0px;
+                margin-left:170px;
+            }
         }
-    }
-    .productos-pantalones{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows:40px;
-        grid-template-areas: "pantalones"
-        "pantalon-1" 
-        "pantalon-2"
-        "pantalon-3" 
-        "pantalon-4"
-        "pantalon-5" 
-        "pantalon-6";
-        padding-bottom:50px;
-        div{
-            padding:0px;
-            margin-left:170px;
+        .productos-pantalones{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows:40px;
+            grid-template-areas: "pantalones"
+            "pantalon-1" 
+            "pantalon-2"
+            "pantalon-3" 
+            "pantalon-4"
+            "pantalon-5" 
+            "pantalon-6";
+            padding-bottom:50px;
+            div{
+                padding:0px;
+                margin-left:170px;
+            }
         }
-    }
-    .productos-buzos{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows:40px;
-        grid-template-areas: "buzos"
-        "buzo-1" 
-        "buzo-2"
-        "buzo-3" 
-        "buzo-4"
-        "buzo-5" 
-        "buzo-6";
-        padding-bottom:50px;
-        h2{
-            padding-bottom:30px;
-        }
-        div{
-            padding:0px;
-            margin-left:170px;
+        .productos-buzos{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows:40px;
+            grid-template-areas: "buzos"
+            "buzo-1" 
+            "buzo-2"
+            "buzo-3" 
+            "buzo-4"
+            "buzo-5" 
+            "buzo-6";
+            padding-bottom:50px;
+            h2{
+                padding-bottom:30px;
+            }
+            div{
+                padding:0px;
+                margin-left:170px;
+            }
         }
     }
 }
 
 @media screen and (max-width:440px){
-    .productos-remeras div{
-        margin-left:100px;
+    main{
+        .productos-remeras{
+            div{
+                margin-left:100px;
+            }
+        }
+        .productos-pantalones{
+            div{
+                margin-left:100px;
+            }
+        }
+        .productos-buzos{
+            div{
+                margin-left:100px;
+            }
+        }
     }
-    .productos-pantalones div{
-        margin-left:100px;
-    }
-    .productos-buzos div{
-        margin-left:100px;
-    }
+
 }
 
 @media screen and (max-width:330px){
-    .navbar-brand{
-        font-size: 20px;
+    main{
+        .navbar-brand{
+            font-size: 20px;
+        }
+        .productos-remeras{
+            div{
+                margin-left:30px;
+            }
+        }
+        .productos-pantalones{
+            div{
+                margin-left:30px;
+            }
+        }
+        .productos-buzos{
+            div{
+                margin-left:30px;
+            }
+        }
     }
-    .productos-remeras div{
-        margin-left:30px;
-    }
-    .productos-pantalones div{
-        margin-left:30px;
-    }
-    .productos-buzos div{
-        margin-left:30px;
-    }
+
 }
 
 /*--------locales media query--------*/
 @media screen and (max-width:1350px){
-    .locales{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows:50px 380px 380px 40px;
-        grid-template-areas:"titulo-local titulo-local"
-        "local-1 local-2"
-        "local-3 local-4"
-        "bottom-t bottom-t";
-        height:1100px;
-        .locales div{
-            margin-left: 80px;
+    main{
+        .locales{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows:50px 380px 380px 40px;
+            grid-template-areas:"titulo-local titulo-local"
+            "local-1 local-2"
+            "local-3 local-4"
+            "bottom-t bottom-t";
+            height:1100px;
+            .locales div{
+                margin-left: 80px;
+            }
         }
     }
 }
 @media screen and (max-width:905px){
-    .locales{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows:50px 380px 380px 380px 380px 40px;
-        grid-template-areas:"titulo-local "
-        "local-1" 
-        "local-2"
-        "local-3" 
-        "local-4"
-        "bottom-t";
-        height:2000px;
+    main{
+        .locales{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows:50px 380px 380px 380px 380px 40px;
+            grid-template-areas:"titulo-local "
+            "local-1" 
+            "local-2"
+            "local-3" 
+            "local-4"
+            "bottom-t";
+            height:2000px;
+        }
     }
+
 }
 @media screen and (max-width:430px){
-    .locales div{
-        height: 350px;
-        width: 200px;
-        margin-left:10px;
+    main{
+        .locales{
+            h2{
+                margin-top: 48px;
+            }
+            div{
+                height: 350px;
+                width: 200px;
+                margin-left:10px;
+            }
+        }
     }
 }
+
 /*---------nosotros media query------*/
 @media screen and (max-width:525px){
-    .nosotros-2 div img{
-        width: 340px;
+    main{
+        .nosotros-2{
+            div{
+                img{
+                    width: 340px;
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width:357px){
-    .titulo-nosotros{
-        margin-top:97px;
-        }
-        .nosotros-2{
-            div{
-                img{
-                    width: 280px;
+    main{
+        .titulo-nosotros{
+            margin-top:97px;
+            }
+            .nosotros-2{
+                div{
+                    img{
+                        width: 280px;
+                }
             }
         }
     }
