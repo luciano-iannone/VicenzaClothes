@@ -1,59 +1,21 @@
-/*----------index media query--------*/
-@media screen and (max-width:740px){
+/*----------media query--------*/
+@media screen and (max-width:1350px){
     main{
-        .hero{
-            padding-top:110px;
-        }
-        .destacados{
+        .locales{
             grid-template-columns: repeat(2,1fr);
-            grid-template-rows:50px 300px 300px;
-            grid-template-areas: "titulo titulo"
-            "grid-1 grid-2"
-            "grid-3 grid-4";
-        }
-        .ofertas{
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: 50px 300px 300px 300px 300px;
-            grid-template-areas:"titulo-ofertas titulo-ofertas"
-            "grid-a grid-b"
-            "grid-c grid-d"
-            "grid-e grid-f"
-            "grid-g grid-h";
+            grid-template-rows:50px 380px 380px 40px;
+            grid-template-areas:"titulo-local titulo-local"
+            "local-1 local-2"
+            "local-3 local-4"
+            "bottom-t bottom-t";
+            height:1100px;
+            .locales div{
+                margin-left: 80px;
+            }
         }
     }
 }
 
-@media screen and (max-width:420px){
-    main{
-        .hero{
-            padding-top:140px;
-        }
-        .destacados{
-            grid-template-columns: repeat(1,1fr);
-            grid-template-rows:40px;
-            grid-template-areas: "titulo"
-            "grid-1"
-            "grid-2"
-            "grid-3"
-            "grid-4";
-        }
-        .ofertas{
-            grid-template-columns: repeat(1,1fr);
-            grid-template-rows:40px;
-            grid-template-areas:"titulo-ofertas"
-            "grid-a"
-            "grid-b"
-            "grid-c"
-            "grid-d"
-            "grid-e"
-            "grid-f"
-            "grid-g"
-            "grid-h";
-        }
-    }
-}
-
-/*--------productos media query--------*/
 @media screen and (max-width:1165px){
     main{
         .productos-remeras{
@@ -98,6 +60,22 @@
     }
 }
 
+@media screen and (max-width:905px){
+    main{
+        .locales{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows:50px 380px 380px 380px 380px 40px;
+            grid-template-areas:"titulo-local "
+            "local-1" 
+            "local-2"
+            "local-3" 
+            "local-4"
+            "bottom-t";
+            height:2000px;
+        }
+    }
+}
+
 @media screen and (max-width:840px){
     main{
         .productos-remeras{
@@ -114,6 +92,31 @@
             div{
                 margin-left: 100px;
             }
+        }
+    }
+}
+
+
+@media screen and (max-width:740px){
+    main{
+        .hero{
+            padding-top:110px;
+        }
+        .destacados{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows:50px 300px 300px;
+            grid-template-areas: "titulo titulo"
+            "grid-1 grid-2"
+            "grid-3 grid-4";
+        }
+        .ofertas{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 50px 300px 300px 300px 300px;
+            grid-template-areas:"titulo-ofertas titulo-ofertas"
+            "grid-a grid-b"
+            "grid-c grid-d"
+            "grid-e grid-f"
+            "grid-g grid-h";
         }
     }
 }
@@ -136,7 +139,6 @@
             }
         } 
     }
-
 }
 
 @media screen and (max-width:660px){
@@ -195,6 +197,18 @@
     }
 }
 
+@media screen and (max-width:525px){
+    main{
+        .nosotros-2{
+            div{
+                img{
+                    width: 340px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width:440px){
     main{
         .productos-remeras{
@@ -213,7 +227,66 @@
             }
         }
     }
+}
 
+@media screen and (max-width:430px){
+    main{
+        .locales{
+            h2{
+                margin-top: 48px;
+            }
+            div{
+                height: 350px;
+                width: 200px;
+                margin-left:10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:420px){
+    main{
+        .hero{
+            padding-top:140px;
+        }
+        .destacados{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows:40px;
+            grid-template-areas: "titulo"
+            "grid-1"
+            "grid-2"
+            "grid-3"
+            "grid-4";
+        }
+        .ofertas{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows:40px;
+            grid-template-areas:"titulo-ofertas"
+            "grid-a"
+            "grid-b"
+            "grid-c"
+            "grid-d"
+            "grid-e"
+            "grid-f"
+            "grid-g"
+            "grid-h";
+        }
+    }
+}
+
+@media screen and (max-width:357px){
+    main{
+        .titulo-nosotros{
+            margin-top:97px;
+            }
+            .nosotros-2{
+                div{
+                    img{
+                        width: 280px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:330px){
@@ -237,81 +310,5 @@
             }
         }
     }
-
 }
 
-/*--------locales media query--------*/
-@media screen and (max-width:1350px){
-    main{
-        .locales{
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows:50px 380px 380px 40px;
-            grid-template-areas:"titulo-local titulo-local"
-            "local-1 local-2"
-            "local-3 local-4"
-            "bottom-t bottom-t";
-            height:1100px;
-            .locales div{
-                margin-left: 80px;
-            }
-        }
-    }
-}
-@media screen and (max-width:905px){
-    main{
-        .locales{
-            grid-template-columns: repeat(1,1fr);
-            grid-template-rows:50px 380px 380px 380px 380px 40px;
-            grid-template-areas:"titulo-local "
-            "local-1" 
-            "local-2"
-            "local-3" 
-            "local-4"
-            "bottom-t";
-            height:2000px;
-        }
-    }
-
-}
-@media screen and (max-width:430px){
-    main{
-        .locales{
-            h2{
-                margin-top: 48px;
-            }
-            div{
-                height: 350px;
-                width: 200px;
-                margin-left:10px;
-            }
-        }
-    }
-}
-
-/*---------nosotros media query------*/
-@media screen and (max-width:525px){
-    main{
-        .nosotros-2{
-            div{
-                img{
-                    width: 340px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:357px){
-    main{
-        .titulo-nosotros{
-            margin-top:97px;
-            }
-            .nosotros-2{
-                div{
-                    img{
-                        width: 280px;
-                }
-            }
-        }
-    }
-}
