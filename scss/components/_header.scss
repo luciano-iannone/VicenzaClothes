@@ -7,8 +7,24 @@ header{
                     color:$color-logo;
                     text-decoration: underline;
                     font-size: 40px;
+                    animation-name:slidein;
+                    animation-duration:3s;
+                    animation-timing-function: ease-in-out;
+                    animation-direction: initial;
+                    animation-delay: 1s;
                 }
             }
         }
+    }
+}
+
+@keyframes slidein{
+    from{
+        margin-right: 100%;
+        width:300%;
+    }
+    to{
+        margin-right: 0;
+        width: 100%;
     }
 }

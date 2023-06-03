@@ -25,6 +25,7 @@ a{
     font-size: 40px;
 }
 
+
 /*----------------------------------MAIN----------------------------------------*/
 
 .hero{
@@ -45,6 +46,12 @@ a{
     font-weight: 300;
     font-size: 30px;
     color:rgb(255, 255, 255);
+    animation-name: slidein;
+    animation-duration:3s;
+    animation-timing-function: ease-in;
+    animation-direction:normal;
+    animation-delay: 1s;
+    animation:slidein 3s ease-in-out normal;
 }
 
 .hero p{
@@ -52,6 +59,22 @@ a{
     font-weight: 300;
     font-size: 20px;
     color:rgb(255, 255, 255);
+    animation-name: slidein;
+    animation-duration:3s;
+    animation-timing-function: ease-in;
+    animation-direction:normal;
+    animation-delay: 1s;
+    animation:slidein 3s ease-in-out normal;
+}
+@keyframes slidein{
+    from{
+        margin-right: 100%;
+        width:300%;
+    }
+    to{
+        margin-right: 0;
+        width: 100%;
+    }
 }
 
 .destacados{
@@ -81,6 +104,11 @@ a{
     box-shadow: 13px 9px 28px -16px rgba(0,0,0,0.46);
     -webkit-box-shadow: 13px 9px 28px -16px rgba(0,0,0,0.46);
     -moz-box-shadow: 13px 9px 28px -16px rgba(0,0,0,0.46);
+    transition:1s;
+}
+.destacados div:hover{
+    transform: scale(1.1);
+    
 }
 
 .grid-1{

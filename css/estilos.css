@@ -4,11 +4,32 @@ main .destacados h2, main .ofertas h2, main .ofertas div, main .productos h2, ma
   justify-content: center;
   align-items: center; }
 
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 300%; }
+  to {
+    margin-right: 0;
+    width: 100%; } }
+
 /*------------header---------*/
 header nav div .navbar-brand h1 {
   color: white;
   text-decoration: underline;
-  font-size: 40px; }
+  font-size: 40px;
+  animation-name: slidein;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-direction: initial;
+  animation-delay: 1s; }
+
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 300%; }
+  to {
+    margin-right: 0;
+    width: 100%; } }
 
 /*----------index page--------*/
 main .hero {
@@ -27,12 +48,24 @@ main .hero {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 30px;
-    color: white; }
+    color: white;
+    animation-name: slidein;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-delay: 1s;
+    animation: slidein 3s ease-in-out normal; }
   main .hero p {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 20px;
-    color: white; }
+    color: white;
+    animation-name: slidein;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-delay: 1s;
+    animation: slidein 3s ease-in-out normal; }
 
 main .destacados {
   display: grid;
@@ -54,7 +87,10 @@ main .destacados {
     align-items: center;
     box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.46);
     -webkit-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.46);
-    -moz-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.46); }
+    -moz-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.46);
+    transition: 1s; }
+    main .destacados div:hover {
+      transform: scale(1.1); }
     main .destacados div h3 {
       font-size: 15px; }
     main .destacados div p {
@@ -79,7 +115,10 @@ main .ofertas {
     box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.46);
     -webkit-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.46);
     -moz-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.46);
-    padding: 0px; }
+    padding: 0px;
+    transition: 1s; }
+    main .ofertas div:hover {
+      transform: scale(1.1); }
     main .ofertas div h3 {
       font-size: 15px; }
     main .ofertas div p {
