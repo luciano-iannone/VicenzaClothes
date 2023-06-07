@@ -28,7 +28,6 @@
             gap: 20px;
             div{
                 padding:0px;
-                margin-left:130px;
             }
         }
         .productos-pantalones{
@@ -41,7 +40,6 @@
             gap:20px;
             div{
                 padding:0px;
-                margin-left:130px;
             }
         }
         .productos-buzos{
@@ -54,13 +52,12 @@
             padding-bottom:30px;
             div{
                 padding:0px;
-                margin-left:130px;
             }
         }
     }
 }
 
-@media screen and (max-width:905px){
+@media screen and (max-width:830px){
     main{
         .locales{
             grid-template-columns: repeat(1,1fr);
@@ -75,27 +72,6 @@
         }
     }
 }
-
-@media screen and (max-width:840px){
-    main{
-        .productos-remeras{
-            div{
-                margin-left: 100px;
-            }
-        } 
-        .productos-pantalones{
-            div{
-                margin-left: 100px;
-            }
-        }
-        .productos-buzos{
-            div{
-                margin-left: 100px;
-            }
-        }
-    }
-}
-
 
 @media screen and (max-width:740px){
     main{
@@ -156,7 +132,7 @@
             padding-bottom:70px;
             div{
                 padding:0px;
-                margin-left:170px;
+                margin: 0%;
             }
         }
         .productos-pantalones{
@@ -172,7 +148,7 @@
             padding-bottom:50px;
             div{
                 padding:0px;
-                margin-left:170px;
+                margin: 0%;
             }
         }
         .productos-buzos{
@@ -191,7 +167,7 @@
             }
             div{
                 padding:0px;
-                margin-left:170px;
+                margin: 0%;
             }
         }
     }
@@ -204,26 +180,6 @@
                 img{
                     width: 340px;
                 }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:440px){
-    main{
-        .productos-remeras{
-            div{
-                margin-left:100px;
-            }
-        }
-        .productos-pantalones{
-            div{
-                margin-left:100px;
-            }
-        }
-        .productos-buzos{
-            div{
-                margin-left:100px;
             }
         }
     }
@@ -284,29 +240,6 @@
                     img{
                         width: 280px;
                 }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:330px){
-    main{
-        .navbar-brand{
-            font-size: 20px;
-        }
-        .productos-remeras{
-            div{
-                margin-left:30px;
-            }
-        }
-        .productos-pantalones{
-            div{
-                margin-left:30px;
-            }
-        }
-        .productos-buzos{
-            div{
-                margin-left:30px;
             }
         }
     }

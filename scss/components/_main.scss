@@ -127,7 +127,7 @@ main{
             @extend %flex;
             background-color: $color-principal;
             margin:0px;
-            padding-bottom: 40px;
+            padding-bottom: 30px;
             padding-top: 40px;
             color: rgb(0, 0, 0);
         }
@@ -135,7 +135,7 @@ main{
     .productos-remeras{
         display:grid;
         grid-template-columns: repeat(3,1fr);
-        grid-template-rows:55px auto auto;
+        grid-template-rows:45px 400px 400px;
         grid-template-areas:"remeras remeras remeras"
         "remera-1 remera-2 remera-3"
         "remera-4 remera-5 remera-6";
@@ -143,29 +143,43 @@ main{
         background-color: $color-principal;
         margin:0px;
         padding-bottom:30px;
+        align-items: center;
+        justify-items: center;
         h2{
             grid-area: remeras;
             background: rgb(23,23,23);
             background: radial-gradient(circle, rgba(23,23,23,1) 0%, rgba(54,41,61,1) 31%, rgba(189,147,216,1) 100%);
             color: #BD93D8;
             @extend %flex;
+            margin:0px;
+            width: 100%;
         }
         div{
-            @extend %flex;
+            display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
             box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.795);
             -webkit-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.753);
             -moz-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.801);
             height: 400px;
             width:220px;
-            margin-left: 140px;
             border:3px solid #BD93D8;
+            transition:1s;
+            &:hover{
+                transform:scale(1.1);
+            }
             h3{
                 font-size: 15px;
             }
             p{
                 margin-bottom:5px;
                 font-size: 15px;
+            }
+            img{
+                width: 200px;
+                height: 300px;
+                object-fit: cover;
             }
         }
     }
@@ -180,6 +194,8 @@ main{
         background-color: $color-principal;
         width:100%;
         padding-bottom: 30px;
+        align-items: center;
+        justify-items: center;
         h2{
             grid-area: pantalones;
             background: rgb(23,23,23);
@@ -187,6 +203,7 @@ main{
             color: #7BCDBA;
             @extend %flex;
             margin:0px;
+            width: 100%;
         }
         div{
             @extend %flex;
@@ -197,7 +214,10 @@ main{
             height:400px;
             width:220px;
             border:3px solid #7BCDBA;
-            margin-left: 140px;
+            transition:1s;
+            &:hover{
+                transform:scale(1.1);
+            }
             h3{
                 font-size: 15px;
             }
@@ -205,25 +225,33 @@ main{
                 margin-bottom:5px;
                 font-size: 15px;
             }
+            img{
+                width: 200px;
+                height: 300px;
+                object-fit: cover;
+            }
         }
     }
     .productos-buzos{
         display:grid;
         grid-template-columns: repeat(3,1fr);
-        grid-template-rows:55px auto auto;
+        grid-template-rows:45px auto auto;
         grid-template-areas:"buzos buzos buzos"
         "buzo-1 buzo-2 buzo-3"
         "buzo-4 buzo-5 buzo-6";
         gap: 40px;
         background-color:$color-principal;
         padding-bottom:40px;
+        align-items: center;
+        justify-items: center;
         h2{
             grid-area: buzos;
             background: rgb(23,23,23);
             background: radial-gradient(circle, rgba(23,23,23,1) 0%, rgba(29,19,15,1) 26%, rgba(147,116,138,1) 100%);
             color: #93748A;
-            display: flex;
-            justify-content: center;
+            @extend %flex;
+            margin:0px;
+            width: 100%;
         }
         div{
             @extend %flex;
@@ -233,14 +261,22 @@ main{
             -moz-box-shadow: 13px 9px 28px -16px rgba(0, 0, 0, 0.795);
             height: 400px;
             width:220px;
-            margin-left: 140px;
             border:3px solid #93748A;
+            transition:1s;
+            &:hover{
+                transform:scale(1.1);
+            }
             h3{
                 font-size: 15px;
             }
             p{
                 margin-bottom:5px;
                 font-size: 15px;
+            }
+            img{
+                width: 200px;
+                height: 300px;
+                object-fit: cover;
             }
         }
     }
@@ -279,9 +315,10 @@ main{
         "bottom-t bottom-t bottom-t bottom-t";
         gap: 20px;
         padding-top: 70px;
-        padding-left: 30px;
         background-color:$color-principal;
         height: 850px;
+        justify-items: center;
+        align-items: center;
         h2{
             grid-area:titulo-local;
             @extend %flex;
