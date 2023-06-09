@@ -64,6 +64,7 @@ main{
             transition:1s;
             &:hover{
                 transform: scale(1.1);
+                background-color:rgb(73, 110, 179);
             }
             h3{
                 font-size:15px;
@@ -78,8 +79,7 @@ main{
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: 50px 310px;
         grid-template-areas: "titulo-ofertas titulo-ofertas titulo-ofertas titulo-ofertas"
-        "grid-a grid-b grid-c grid-d"
-        "gird-e grid-f grid-g grid-h";
+        "grid-a grid-b grid-c grid-d";
         gap:30px;
         padding-bottom:30px;
         background-color:$color-principal;
@@ -101,12 +101,17 @@ main{
             transition:1s;
             &:hover{
                 transform:scale(1.1);
+                background-color: #93748A;
             }
             h3{
                 font-size:15px;
             }
             p{
                 font-size:15px;
+            }
+            img{
+                height:200px;
+                width:170px;
             }
         }
     }
@@ -168,6 +173,7 @@ main{
             transition:1s;
             &:hover{
                 transform:scale(1.1);
+                background-color: #BD93D8;
             }
             h3{
                 font-size: 15px;
@@ -217,6 +223,7 @@ main{
             transition:1s;
             &:hover{
                 transform:scale(1.1);
+                background-color: #7BCDBA;
             }
             h3{
                 font-size: 15px;
@@ -265,6 +272,7 @@ main{
             transition:1s;
             &:hover{
                 transform:scale(1.1);
+                background-color: #93748A;
             }
             h3{
                 font-size: 15px;
@@ -275,7 +283,7 @@ main{
             }
             img{
                 width: 200px;
-                height: 300px;
+                height: 260px;
                 object-fit: cover;
             }
         }

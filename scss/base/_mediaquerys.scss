@@ -73,49 +73,36 @@
     }
 }
 
-@media screen and (max-width:740px){
+@media screen and (max-width:825px){
     main{
         .hero{
             padding-top:110px;
+            h2{
+                width: 90%;
+                margin-left: 5px;
+            }
+            p{
+                width: 90%;
+                margin-left: 5px;
+            }
         }
         .destacados{
             grid-template-columns: repeat(2,1fr);
-            grid-template-rows:50px 300px 300px;
+            grid-template-rows:50px 320px 320px;
             grid-template-areas: "titulo titulo"
             "grid-1 grid-2"
             "grid-3 grid-4";
         }
         .ofertas{
             grid-template-columns: repeat(2,1fr);
-            grid-template-rows: 50px 300px 300px 300px 300px;
+            grid-template-rows: 50px 320px 320px;
             grid-template-areas:"titulo-ofertas titulo-ofertas"
             "grid-a grid-b"
-            "grid-c grid-d"
-            "grid-e grid-f"
-            "grid-g grid-h";
+            "grid-c grid-d";
         }
     }
 }
 
-@media screen and (max-width:710px){
-    main{
-        .productos-remeras{ 
-            div{
-                margin-left: 80px;
-            }
-        }
-        .productos-pantalones{
-            div{
-                margin-left: 80px;
-            }
-        }
-        .productos-buzos{
-            div{
-                margin-left: 80px;
-            }
-        } 
-    }
-}
 
 @media screen and (max-width:660px){
     main{
@@ -173,34 +160,7 @@
     }
 }
 
-@media screen and (max-width:525px){
-    main{
-        .nosotros-2{
-            div{
-                img{
-                    width: 340px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:430px){
-    main{
-        .locales{
-            h2{
-                margin-top: 48px;
-            }
-            div{
-                height: 350px;
-                width: 200px;
-                margin-left:10px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width:420px){
+@media screen and (max-width:530px){
     main{
         .hero{
             padding-top:140px;
@@ -221,11 +181,37 @@
             "grid-a"
             "grid-b"
             "grid-c"
-            "grid-d"
-            "grid-e"
-            "grid-f"
-            "grid-g"
-            "grid-h";
+            "grid-d";
+        }
+    }
+}
+
+
+@media screen and (max-width:525px){
+    main{
+        .nosotros-2{
+            div{
+                img{
+                    width: 340px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:430px){
+    main{
+        .locales{
+            h2{
+                margin-top: 48px;
+            }
+            div{
+                height: 350px;
+                width: 200px;
+                margin-left:10px;
+            }
         }
     }
 }
